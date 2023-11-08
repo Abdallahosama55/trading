@@ -1,0 +1,86 @@
+import React from 'react'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import'./BannerAds.css'
+
+
+import { BsTag } from "react-icons/bs";
+import img_icon from '../../../assets/ads.svg';
+
+
+import Slider from 'react-slick';
+import { Zoom } from 'react-reveal';
+function BannerAds() {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+       
+        prevArrow: null, // Hide the previous arrow
+        nextArrow: null, // Hide the next arrow
+      };
+
+
+  return (
+    <div>
+  
+    <Slider {...settings}>
+    
+    <div className='background-container py-3'>
+  
+    <img src={require('../../../assets/bgg2.png')} alt='Background Image' className='background-image' />
+    <div className=''>
+    <div className='row justify-content-center'>
+    <Zoom>
+
+    <div className='col-md-7 col-sm-12 banner-text shadow  '> 
+    <h1 className='header-text'>AHA MARKET is a partner with the best broker, Vantage</h1>
+    <p>All forex services that you provide are through an approved broker, which is the best in all respects for deposit, withdrawal and automatic copying services.
+
+    To register, use the link below</p>
+
+    <button className=' btn btn-warning'>Register Now</button>
+    </div>
+    </Zoom>
+    <div className='col-3'>  
+
+    <div class="container mt-5">
+
+
+
+</div>
+
+
+
+  
+  
+  </div>
+   
+    </div>
+     
+    </div>
+  </div>
+
+
+  
+     
+  
+ 
+
+
+
+     
+   
+    </Slider>
+       
+    
+    </div>
+  )
+}
+
+export default BannerAds

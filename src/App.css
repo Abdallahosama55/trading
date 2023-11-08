@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&family=Poppins:wght@400;500;600;900&family=Roboto&family=Rubik&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&family=Poppins:wght@400;900&family=Roboto:wght@400;700&family=Rubik&display=swap');
+
+
+.App{
+    background-color: dark !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+font-family: 'Poppins', sans-serif !important;
+font-family: 'Roboto', sans-serif !important;
+font-family: 'Rubik', sans-serif !important;
+color: #191919;
+
+}
+body{
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden !important;
+
+}
+
+.sec-1{
+    background-color: rgb(255, 255, 255);
+
+    
+}
+.sec-2{
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center;
+
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-color: #191919 !important;
+    margin-top:-5px !important;
+ 
+    z-index:5;
+}
+.sec2-text{
+    background-color: dark !important;
+ 
+    font-family: 'tajawal ', sans-serif !important;
+    line-height:40px ;
+    
+    color: whitesmoke!important;
+    text-align: center;
+    
+
+}
+
+.sec-2 p{
+    background-color: dark !important;
+ 
+font-family: 'tajawal ', sans-serif !important;
+line-height:40px ;
+
+
+text-align: center;
+
+
+}
+.span{
+    background-color: dark !important;
+ 
+font-family: 'tajawal ', sans-serif !important;
+line-height:40px;
+font-weight: 600;
+
+text-align: center;
+
+
+}
+.header-text h1{
+font-family: 'Poppins', sans-serif !important;
+font-weight: 600  !important;
+
+    
+}
+
+.btn-login{
+    border-width:  2px !important;
+    border: #ffc800;
+    border-style:solid
+
+}
+.link-nav{
+    color: #191919 !important;
+    font-family: 'Poppins', sans-serif !important;
+font-weight: 500  !important;
+font-size: large;
+
+}
+.link-nav:hover{
+
+
+    color: #df9d01 !important;
+    font-family: 'Poppins', sans-serif !important;
+font-weight: 500  !important;
+
+}
