@@ -5,15 +5,29 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import'./BannerAds.css'
-
-
+import { motion } from 'framer-motion';
 import { BsTag } from "react-icons/bs";
 import img_icon from '../../../assets/ads.svg';
-
+import ReactTyped  from  'react-typed'
 
 import Slider from 'react-slick';
 import { Zoom } from 'react-reveal';
+
 function BannerAds() {
+  const imageVariants = {
+    initial: {
+      y: '0%',
+    },
+    animate: {
+      y: [-10, 10, -10, 0],
+      transition: {
+        duration: 5,
+        ease: 'easeInOut',
+        repeat: Infinity,
+        repeatType: 'reverse',
+      },
+    },
+  };
     const settings = {
         dots: false,
         infinite: true,
@@ -31,27 +45,42 @@ function BannerAds() {
   
     <Slider {...settings}>
     
-    <div className='background-container py-3'>
-  
-    <img src={require('../../../assets/bgg2.png')} alt='Background Image' className='background-image' />
+    <div>
+{/*<img src={require('../../../assets/bgg2.png')} alt='Background Image' className='background-image' /> */}
+    
     <div className=''>
     <div className='row justify-content-center'>
     <Zoom>
 
-    <div className='col-md-7 col-sm-12 banner-text shadow  '> 
-    <h1 className='header-text'>AHA MARKET is a partner with the best broker, Vantage</h1>
+    <div className='col-md-7 col-sm-12 banner-text '> 
+    <h1 className='header-text'>
+    
+    <ReactTyped strings={["AHA MARKET is a partner with the best broker, Vantage "]} typeSpeed={50}   noloop  />
+    
+    </h1>
     <p>All forex services that you provide are through an approved broker, which is the best in all respects for deposit, withdrawal and automatic copying services.
 
     To register, use the link below</p>
-
-    <button className=' btn btn-warning'>Register Now</button>
+    <a href='https://www.vantagemarkets.com/open-live-account/?affid=MTgwMTMxNw%3D%3D'>
+    <button className=' btn btn-warning rounded-5 '>Register Now</button>
+    </a>
     </div>
     </Zoom>
-    <div className='col-3'>  
-
+    <div className='col-4'>  
+<div className='d-flex justify-content-center align-items-center mt-5'>
     <div class="container mt-5">
+    <div style={{ overflow: 'hidden', width: '100%' }}>
+    <motion.img
+      src={require('../../../assets/crypto-bg-img.webp')}
+      alt="Moving Image"
+      style={{ width: '100%' }}
+      initial="initial"
+      animate="animate"
+      variants={imageVariants}
+    />
+  </div>
 
-
+</div>
 
 </div>
 

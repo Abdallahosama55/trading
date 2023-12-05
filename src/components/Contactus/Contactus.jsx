@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { Container, Figure } from 'react-bootstrap'
 import img_contact from '../../assets/ABcontact.svg'
-
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 function Contactus() {
   const imageVariants = {
@@ -18,7 +18,12 @@ function Contactus() {
       },
     },
   };
+const sendEmail=(e)=>{
+  e.preventDefault();
+  alert("submited")
+  emailjs.sendForm('service_og6l3wn','template_djh2iqu',e.target,'pVC8DPr9-5T5xD0ro')
 
+}
   return (
     <Fragment>
     <div className=''>
@@ -47,17 +52,17 @@ function Contactus() {
     </div>
     <div className='col-md-6'>
     <h1 className='p-3 fw-bold text-muted'>Contact <span className='text-warning'>Us</span></h1>
-    <form>
+    <form onSubmit={sendEmail}>
     <div className="form-group mt-3">
   <div className=' row '>
   <div className=' col-1'></div>
-  <div className=' col-11'><input type="text" className="form-control rounded-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name"/></div>
+  <div className=' col-11'><input type="text" name="name" className="form-control rounded-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name"/></div>
   </div>
   </div>
   <div className="form-group mt-3">
   <div className=' row'>
   <div className=' col-1'></div>
-  <div className=' col-11'><input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/></div>
+  <div className=' col-11'><input type="email"  name="email_from" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email"/></div>
   </div>
   </div>
   <div className="form-group mt-3">
@@ -65,7 +70,7 @@ function Contactus() {
   <div className=' col-1'></div>
   <div className=' col-11'>  <div class="form-group">
 
-    <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Write your massage here" rows="3"></textarea>
+    <textarea className="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Write your massage here" rows="3"></textarea>
   </div></div>
   </div>
   </div>

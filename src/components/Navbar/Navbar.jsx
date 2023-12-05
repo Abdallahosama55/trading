@@ -49,7 +49,7 @@ function Navbar_comp() {
 
           <Nav className="ms-auto justify-content-center"> {/* Added 'justify-content-center' class */}
 
-          <Nav.Link href="#home" className=' rounded-4 text-white bg-dark ps-4 pe-4 shadow fw-bold  mt-1' >Register </Nav.Link>
+          <Nav.Link href="https://www.vantagemarkets.com/open-live-account/?affid=MTgwMTMxNw%3D%3D" className=' rounded-4 text-white bg-dark ps-4 pe-4 shadow fw-bold  mt-1' >Register </Nav.Link>
      
         
         </Nav>

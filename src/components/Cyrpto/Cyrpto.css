@@ -1,0 +1,24 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .text-header{
+   text-shadow:rgb(224, 224, 221) 1px 0 30px !important;
+   font-size: 50px !important;
+  }
+  .header-section2{
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    color: rgb(33, 33, 33) !important;
+  }

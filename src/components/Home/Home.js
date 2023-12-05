@@ -14,6 +14,7 @@ import bgimg05 from'../../assets/about03.jpg'
 import { Container } from 'react-bootstrap';
 import BannerAds from './BannerAds/BannerAds'
 import { Zoom } from 'react-reveal';
+import Services from '../Services/Services';
 
 const Home = () => {
 
@@ -32,18 +33,20 @@ const Home = () => {
 
         </div>
           </div>
-          <div className='img-bg'>
-            <img src={bgimg02} alt='img' className='img02'/>
-            <img src={bgimg03} alt='img' className='img03'/>
-            <img src={bgimg04} alt='img' className='img04'/>
-          </div>
+      
         </div>
       </div>
-      <Container className='mt-3 gy-4'>
-      <div className='mt-3 gy-4'>
+      <div>
+      <div >
+      <div className=' bg-warning'>
+      <Container>
+      
       <Categories/>
+      </Container>
+     
+      </div>
       <div className='mt-5'>
-  
+  <Services/>
       
       
       </div>
@@ -55,9 +58,11 @@ const Home = () => {
       
       
       </div>
-      </Container>
-     
-      <Aboutus />
+      </div>
+     <div className=' bg-warning'>
+     <Aboutus />
+     </div>
+      
    
 
 

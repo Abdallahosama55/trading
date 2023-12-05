@@ -1,10 +1,8 @@
 import React, { Fragment ,useEffect } from 'react';
-import CountUp, { useCountUp } from 'react-countup';
 
 import { motion } from 'framer-motion';
 import { Ticker} from "react-tradingview-embed";
 import { Container } from 'react-bootstrap';
-
 
 import {FaRegMoneyBillAlt} from 'react-icons/fa'
 
@@ -14,7 +12,22 @@ import './Forex.css';
 
 import {AiOutlineSafetyCertificate} from 'react-icons/ai'
 import img5 from '../../assets/5.png'
+import { Bounce, Fade, Zoom } from 'react-reveal';
 const Forex = () => {
+  const imageVariants2 = {
+    initial: {
+      y: '0%',
+    },
+    animate: {
+      y: [-30, 30, -30, 0],
+      transition: {
+        duration: 5,
+        ease: 'easeInOut',
+        repeat: Infinity,
+        repeatType: 'reverse',
+      },
+    },
+  };
   const imageVariants = {
     initial: {
       x: '0%',
@@ -40,20 +53,56 @@ const Forex = () => {
     
   return (
     <Fragment>
-      <div className='sec1-forex d-flex justify-content-center align-items-center'>
+      <div className='sec1-forex d-flex justify-content-center align-items-center '>
+
       <div className=' d-block'>
   
-        <div className='row justify-content-center align-items-center'>
-       
-            <h1  className=''>  Account Management</h1>
-            <p>
+        <div className='row justify-content-center align-items-center '>
+
+
+        <div className='col-md-2 mt-2 col-sm-4 '>
+        <div style={{ overflow: 'hidden', width: '100%' }}>
+        <motion.img
+          src={require('../../assets/Template Source (1).psd (1366 x 768 بيكسل).png')}
+          alt="Moving Image"
+          className="moving-image"
+          initial="initial"
+          animate="animate"
+          variants={imageVariants2}
+        />
+      </div>
+   
+        </div>
+        <div className='col-md-8'>
+       <Zoom>
+    
+            <h1  className='  text-warning text-center'>  Account Management</h1>
+            </Zoom>
+            <Fade>
+            <p className=' w-100 '>
               To assist our clients in achieving their financial objectives, we provide thorough account management services on our wealth management website. Our team of knowledgeable financial advisors is committed to offering you specialized investment options that match your specific requirements and risk tolerance.
             </p>
-        
-        </div>
- <div className=' d-flex justify-content-center align-items-center'>
-  <button className='btn btn-danger'>Contact us</button>
+            </Fade>
+            <div className=' d-flex justify-content-center align-items-center'>
+  <button className='btn btn-warning'>Contact us</button>
   </div>
+            </div>
+        
+            <div className='col-md-2 mt-2 col-sm-4 '>
+            <div style={{ overflow: 'hidden', width: '100%' }}>
+            <motion.img
+              src={require('../../assets/Template Source (1).psd (1366 x 768 بيكسل).png')}
+              alt="Moving Image"
+              className="moving-image"
+              initial="initial"
+              animate="animate"
+              variants={imageVariants2}
+            />
+          </div>
+       
+            </div>
+        </div>
+ 
   </div>
   
       </div>
@@ -61,10 +110,13 @@ const Forex = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-4 col-sm-12'>
-            <h1 className='fw-bold'>$ 100 Challenge</h1>
-            
+            <Fade top>
+            <h1 className='fw-bold text-warning'>$ 100 Challenge</h1>
+            </Fade>
+            <Fade left>
           <p className=' text-muted  py-5 mt-2 '>Welcome to our $100 challenge, where we offer high-risk investment opportunities with the potential for a $1000 outcome within a month. This challenge is designed for clients who are willing to take on higher risk in exchange for the potential for higher return</p>
-            </div>
+          </Fade>
+          </div>
             <div className='col-md-8 col-sm-12'>
             
 
@@ -83,6 +135,7 @@ const Forex = () => {
           </div>
         </div>
       </div>
+      <Zoom>
       <div className='sec3-forex  p-5 m-3'>
       <h1 className='p-5 text-center text-muted fw-semibold '>About <span className=' text-warning '>Trading</span> forex </h1>
       <div className='container sec3-forex-container p-3  shadow rounded-3 '>
@@ -111,8 +164,11 @@ const Forex = () => {
           <h3 className='text-muted  '>More Trausted</h3>
           </div>
         </div>
+        
       </div>
+      
     </div>
+    </Zoom>
     </Fragment>
     
   );

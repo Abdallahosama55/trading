@@ -1,14 +1,19 @@
 import React from 'react'
 import Testimonial from '../Home/Testimonial/Testimonial'
 import Aboutus from '../Home/AboutUs/Aboutus'
+import Manager from '../Manager/Manager'
 
 function About_us() {
   return (
     <div>
     
-    <div className='container'>
+   
+    <div className=' bg-warning'>
+    
     <Aboutus></Aboutus>
-    <Testimonial></Testimonial>
+    </div>
+    <div className='container'>
+   <Manager/>
     
     </div>
     

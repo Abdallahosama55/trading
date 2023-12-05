@@ -2,13 +2,13 @@ import React from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import { Bounce, Fade, Zoom } from 'react-reveal';
 import './Testimonial.css'
 import TitleBasic from '../../../components/TitleBasic/TitleBasic'
 import ItemTestimonial from './ItemTestimonial';
 
 
-import bgTestimonial from '../../../assets/bgTestimonial.png'
+import bgTestimonial from '../../../assets/test.png'
 import person01 from '../../../assets/person01.jfif'
 import person02 from '../../../assets/person02.jfif'
 import person03 from '../../../assets/person03.jfif'
@@ -17,6 +17,7 @@ import person05 from '../../../assets/person05.jfif'
 import person06 from '../../../assets/bgg2.png'
 import Motion01 from '../../../assets/bgtestimonial01.png'
 import Motion02 from '../../../assets/bg02.png'
+
 
 
 
@@ -54,16 +55,23 @@ const Testimonial = () => {
         <div className='container'>
           <div className='titlemain'>
               <TitleBasic title = 'Testimonial'/>
+          
+              <Fade top>
               <h2 className=' text-dark'>See What Are The Customers Saying About us</h2>
+              </Fade>
           </div>
           <div className='row'>
             <div className='col-lg-6'>
+            <Zoom >
               <div className='box thumb-wraper'>
                 <img src={bgTestimonial} alt='img' className='img-fluid'/>
                
               </div>
+              </Zoom>
             </div>
             <div className='col-lg-6'>
+            
+            <Bounce right>
               <Slider {...settings}>
                       {boxesData.map((box, index) => (
                         <ItemTestimonial
@@ -74,11 +82,9 @@ const Testimonial = () => {
                         />
                         ))}
                     </Slider>
+                    </Bounce>
             </div>
-            <div className='img-bg'>
-              <img src={Motion01} alt='img' className='img01'/>
-              <img src={Motion02} alt='img' className='img02'/>
-            </div>
+         
           </div>
         </div>
       </div>

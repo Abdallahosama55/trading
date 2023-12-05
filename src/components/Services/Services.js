@@ -90,10 +90,7 @@ const Services = () => {
               </div>
             </div>
             </Fade>
-            <div className='img-bg'>
-              <img src={Motion01} alt='img' className='img01'/>
-              <img src={Motion02} alt='img' className='img02'/>
-            </div>
+         
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const Footer = () => {
           <div className='row'>
             <div className='col-lg-3 col-md-6'>
               <div className='box01'>
-                <Link to="/"><img src={Logo} alt='Logo' className='img-fluid'/></Link>
+                <Link to="/"><img src={Logo} alt='Logo' className='img-fluid bg-white rounded-2  p-3'/></Link>
                 <p>Lorem ipsum is dolor sit amet, csectetur adipiscing elit, dolore smod tempor incididunt ut labore et.</p>
                 <div className='icon-text'>
                   <div className="icon-container"><FontAwesomeIcon icon={faPhone} className='iconphone'/></div>
@@ -73,15 +73,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className='Copyright'>
+          <div className='Copyright text-white'>
             <p>Copyright © 2023 Design & Developed by Abdallah Osama</p>
           </div>
-          <div className='img-bg'>
-            <img src={Motion01} alt='img' className='img01'/>
-            <img src={Motion01} alt='img' className='img01 img0101'/>
-            <img src={Motion02} alt='img' className='img02'/>
-
-          </div>
+    
         </div>
       </div>
     </>
