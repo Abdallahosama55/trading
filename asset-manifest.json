@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/trading/static/css/main.4a5af685.css",
-    "main.js": "/trading/static/js/main.72249ef4.js",
+    "main.js": "/trading/static/js/main.b1179550.js",
     "static/js/787.1786eafb.chunk.js": "/trading/static/js/787.1786eafb.chunk.js",
     "static/media/ABcontact.svg": "/trading/static/media/ABcontact.9719c9d1aedc7089828ddbb9bab7562a.svg",
     "static/media/cyrpto.mp4": "/trading/static/media/cyrpto.8ccbd9751872b951db28.mp4",
@@ -11,6 +11,7 @@
     "static/media/bgg2.png": "/trading/static/media/bgg2.b62245820def54dc2253.png",
     "static/media/bgg5.png": "/trading/static/media/bgg5.209b6ede5028ad68678e.png",
     "static/media/bgg4.png": "/trading/static/media/bgg4.769113e3c9a0d366c46b.png",
+    "static/media/about.png": "/trading/static/media/about.32fe4517345411b780ca.png",
     "static/media/bgg6.png": "/trading/static/media/bgg6.680361c64ac449ee778b.png",
     "static/media/TT3.png": "/trading/static/media/TT3.c0207ddc1fce0b885ba1.png",
     "static/media/Atm.png": "/trading/static/media/Atm.101a824f45b9ce179f25.png",
@@ -19,11 +20,11 @@
     "static/media/4.png": "/trading/static/media/4.c6bcc4bf50d48efd6664.png",
     "static/media/TT4.png": "/trading/static/media/TT4.2a00dadbe2a90014895e.png",
     "static/media/man.png": "/trading/static/media/man.1b274a448d3809aed969.png",
+    "static/media/account.png": "/trading/static/media/account.c5cc5721b6ee260a2128.png",
     "static/media/bgg03.png": "/trading/static/media/bgg03.aebe674440fb91ab3c48.png",
     "static/media/TT2.png": "/trading/static/media/TT2.7703030a98560890cd90.png",
     "static/media/TT.png": "/trading/static/media/TT.95ad5069d3bcc7777d09.png",
     "static/media/manager.png": "/trading/static/media/manager.7c8a44b64e1d42381ae8.png",
-    "static/media/rec (2).png": "/trading/static/media/rec (2).8a72d4ac770dc6cd42c3.png",
     "static/media/test.png": "/trading/static/media/test.21d688c826464f8e87b1.png",
     "static/media/Template Source (1).psd (1366 x 768 بيكسل).png": "/trading/static/media/Template Source (1).psd (1366 x 768 بيكسل).c8545abf29f764edb7bc.png",
     "static/media/crypto-bg-img.webp": "/trading/static/media/crypto-bg-img.95732218311416fcb803.webp",
@@ -42,11 +43,11 @@
     "static/media/slick.woff": "/trading/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/trading/index.html",
     "main.4a5af685.css.map": "/trading/static/css/main.4a5af685.css.map",
-    "main.72249ef4.js.map": "/trading/static/js/main.72249ef4.js.map",
+    "main.b1179550.js.map": "/trading/static/js/main.b1179550.js.map",
     "787.1786eafb.chunk.js.map": "/trading/static/js/787.1786eafb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a5af685.css",
-    "static/js/main.72249ef4.js"
+    "static/js/main.b1179550.js"
   ]
 }
