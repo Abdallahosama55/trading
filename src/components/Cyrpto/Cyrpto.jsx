@@ -55,7 +55,7 @@ function Cyrpto() {
                 <div className='col text-center'>
                   <div className='d-block '>
                     <h1 className='fw-bolder'>
-                      +<CountUp delay={1} end={100} />
+                      +<CountUp delay={1} end={40} />
                     </h1>
                     <h2 className='text-dark'>
                       Wallet Types
@@ -65,7 +65,7 @@ function Cyrpto() {
                 <div className='col text-center'>
                   <div className='d-block '>
                     <h1 className='fw-bolder'>
-                      +<CountUp delay={1} end={100} />
+                      +<CountUp delay={1} end={35} />
                     </h1>
                     <h2 className=' text-dark'>Personals Atm</h2>
                   </div>

@@ -61,11 +61,12 @@ const Forex = () => {
 
 
         <div className='col-md-2 mt-2 col-sm-4 '>
+        <img src={require('../../assets/account.png')} className=' w-100 ms-4  d-md-none' ></img>
         <div style={{ overflow: 'hidden', width: '100%' }}>
         <motion.img
           src={require('../../assets/Template Source (1).psd (1366 x 768 بيكسل).png')}
           alt="Moving Image"
-          className="moving-image"
+          className="moving-image d-none d-md-block"
           initial="initial"
           animate="animate"
           variants={imageVariants2}
@@ -88,12 +89,13 @@ const Forex = () => {
   </div>
             </div>
         
-            <div className='col-md-2 mt-2 col-sm-4 '>
+            <div className='col-md-2 mt-2 col-sm-12 '>
+          
             <div style={{ overflow: 'hidden', width: '100%' }}>
             <motion.img
               src={require('../../assets/Template Source (1).psd (1366 x 768 بيكسل).png')}
               alt="Moving Image"
-              className="moving-image"
+              className="moving-image d-none d-md-block"
               initial="initial"
               animate="animate"
               variants={imageVariants2}

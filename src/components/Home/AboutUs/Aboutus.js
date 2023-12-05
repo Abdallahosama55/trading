@@ -37,9 +37,11 @@ const Aboutus = () => {
               </div>
               </Fade>
             </div>
+            <Fade right>
             <div className='col-lg-6'>
-         <img src={require('../../../assets/rec (2).png')} className=' w-100'/>
+         <img src={require('../../../assets/about.png')} className=' w-100'/>
             </div>
+            </Fade>
             <div className='img-bg'>
               <img src={Motion01} alt='img' className='img01'/>
               <img src={Motion02} alt='img' className='img02'/>
