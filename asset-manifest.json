@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/trading/static/css/main.4a5af685.css",
-    "main.js": "/trading/static/js/main.b1179550.js",
+    "main.css": "/trading/static/css/main.043c3ee0.css",
+    "main.js": "/trading/static/js/main.dfa440f8.js",
     "static/js/787.1786eafb.chunk.js": "/trading/static/js/787.1786eafb.chunk.js",
     "static/media/ABcontact.svg": "/trading/static/media/ABcontact.9719c9d1aedc7089828ddbb9bab7562a.svg",
     "static/media/cyrpto.mp4": "/trading/static/media/cyrpto.8ccbd9751872b951db28.mp4",
     "static/media/about03.jpg": "/trading/static/media/about03.c3c50fa45b53b5665a42.jpg",
     "static/media/5.png": "/trading/static/media/5.04b1ece96ee4bb011809.png",
     "static/media/10 (2).png": "/trading/static/media/10 (2).ee40547691ce925b63a0.png",
+    "static/media/89.png": "/trading/static/media/89.fde832fb84d3c7768bab.png",
     "static/media/bgg2.png": "/trading/static/media/bgg2.b62245820def54dc2253.png",
     "static/media/bgg5.png": "/trading/static/media/bgg5.209b6ede5028ad68678e.png",
     "static/media/bgg4.png": "/trading/static/media/bgg4.769113e3c9a0d366c46b.png",
     "static/media/about.png": "/trading/static/media/about.32fe4517345411b780ca.png",
     "static/media/bgg6.png": "/trading/static/media/bgg6.680361c64ac449ee778b.png",
+    "static/media/aa.png": "/trading/static/media/aa.dc0006f31fb0698f9036.png",
     "static/media/TT3.png": "/trading/static/media/TT3.c0207ddc1fce0b885ba1.png",
     "static/media/Atm.png": "/trading/static/media/Atm.101a824f45b9ce179f25.png",
+    "static/media/ab.png": "/trading/static/media/ab.c44d3f7cbe6f327dc8dd.png",
     "static/media/trust.png": "/trading/static/media/trust.6e73d39ea78afc92ff3c.png",
     "static/media/img1cyrpto.png": "/trading/static/media/img1cyrpto.e56a5f457af8021d96b7.png",
     "static/media/4.png": "/trading/static/media/4.c6bcc4bf50d48efd6664.png",
@@ -22,6 +25,7 @@
     "static/media/man.png": "/trading/static/media/man.1b274a448d3809aed969.png",
     "static/media/account.png": "/trading/static/media/account.c5cc5721b6ee260a2128.png",
     "static/media/bgg03.png": "/trading/static/media/bgg03.aebe674440fb91ab3c48.png",
+    "static/media/ac.png": "/trading/static/media/ac.462cbbfbb8471be292ca.png",
     "static/media/TT2.png": "/trading/static/media/TT2.7703030a98560890cd90.png",
     "static/media/TT.png": "/trading/static/media/TT.95ad5069d3bcc7777d09.png",
     "static/media/manager.png": "/trading/static/media/manager.7c8a44b64e1d42381ae8.png",
@@ -42,12 +46,12 @@
     "static/media/slick.ttf": "/trading/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/trading/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/trading/index.html",
-    "main.4a5af685.css.map": "/trading/static/css/main.4a5af685.css.map",
-    "main.b1179550.js.map": "/trading/static/js/main.b1179550.js.map",
+    "main.043c3ee0.css.map": "/trading/static/css/main.043c3ee0.css.map",
+    "main.dfa440f8.js.map": "/trading/static/js/main.dfa440f8.js.map",
     "787.1786eafb.chunk.js.map": "/trading/static/js/787.1786eafb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a5af685.css",
-    "static/js/main.b1179550.js"
+    "static/css/main.043c3ee0.css",
+    "static/js/main.dfa440f8.js"
   ]
 }
