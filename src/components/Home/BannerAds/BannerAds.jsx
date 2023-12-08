@@ -49,7 +49,7 @@ function BannerAds() {
 {/*<img src={require('../../../assets/bgg2.png')} alt='Background Image' className='background-image' /> */}
     
     <div className=''>
-    <div className='row justify-content-center'>
+    <div className='row justify-content-center align-items-center'>
     <Zoom>
 
     <div className='col-md-7 col-sm-12 banner-text '> 
@@ -66,10 +66,10 @@ function BannerAds() {
     </a>
     </div>
     </Zoom>
-    <div className='col-4'>  
-<div className='d-flex justify-content-center align-items-center mt-5'>
-    <div class="container mt-5">
-    <div style={{ overflow: 'hidden', width: '100%' }}>
+    <div className='col-md-4 col-sm-12  pb-5'>  
+<div className='d-flex justify-content-center align-items-center '>
+    <div class="d-flex justify-content-center align-items-center ">
+   
     <motion.img
       src={require('../../../assets/crypto-bg-img.webp')}
       alt="Moving Image"
@@ -78,7 +78,7 @@ function BannerAds() {
       animate="animate"
       variants={imageVariants}
     />
-  </div>
+
 
 </div>
 

@@ -41,7 +41,25 @@ function Exchange() {
     <div className='  w-100  sec-1  '>
  <Container className='h-75  mb-5'>
  <div className='row   mt-5 py-md-5'>
+ <div className='col-md-5 col-sm-12 d-flex justify-content-center align-items-center '>
 
+  
+ <div style={{ overflow: 'hidden', width: '100%' }}>
+ <motion.img
+   src={require('../../assets/10 (2).png')}
+   alt="Moving Image"
+  
+   style={{"width":"100%"}}
+   initial="initial"
+   animate="animate"
+   variants={imageVariants}
+ />
+</div>
+
+
+
+
+</div>
 
   <div className='col-md-7 '>
 
@@ -60,25 +78,7 @@ function Exchange() {
 
   </div>
  <Zoom>
-  <div className='col-md-5 col-sm-12 d-flex justify-content-center align-items-center '>
 
-  
-  <div style={{ overflow: 'hidden', width: '100%' }}>
-  <motion.img
-    src={require('../../assets/10 (2).png')}
-    alt="Moving Image"
-   
-    style={{"width":"100%"}}
-    initial="initial"
-    animate="animate"
-    variants={imageVariants}
-  />
-</div>
-
- 
- 
-
- </div>
  </Zoom>
  </div>
  

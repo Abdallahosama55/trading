@@ -14,6 +14,26 @@ import {AiOutlineSafetyCertificate} from 'react-icons/ai'
 import img5 from '../../assets/5.png'
 import { Bounce, Fade, Zoom } from 'react-reveal';
 const Forex = () => {
+
+  const features=[
+{
+  image:  require('../../assets/ac.png'),
+  title: 'Easy Trading',
+},
+{
+  image: require('../../assets/aa.png'),
+  title: 'Fast Earn',
+},
+{
+  image:require('../../assets/ab.png'),
+  title: 'More Trausted',
+
+},
+
+
+
+];
+
   const imageVariants2 = {
     initial: {
       y: '0%',
@@ -137,40 +157,30 @@ const Forex = () => {
           </div>
         </div>
       </div>
-      <Zoom>
+     
       <div className='sec3-forex  p-5 m-3'>
       <h1 className='p-5 text-center text-muted fw-semibold '>About <span className=' text-warning '>Trading</span> forex </h1>
-      <div className='container sec3-forex-container p-3  shadow rounded-3 '>
+      <div className='container sec3-forex-container   shadow rounded-3 '>
         <div className='row d-flex justify-content-center align-items-center'>
-          <div className='col-md-4 col-sm-12 p-3'>
+        {features.map((feature, index) => (
+     <Zoom>
+          <div key={index} className=' col-md-4 col-sm-12 p-3'>
           <div className='p-2'>
-          <SlChart size={70} color='grey'/>
+          <img src={feature.image} width={125}/>
           </div>
-         <h3 className='text-muted fw-medium p-2 '>Easy Trading</h3>
+         <h3 className='text-muted fw-medium p-2 '>{feature.title}</h3>
     
           
           </div>
-          <div className='col-md-4 col-sm-12 p-3'>
-          <div className='p-2'>
-     <FaRegMoneyBillAlt size={70} color='green' />
-     </div>
-          <h3 className='text-muted '>Fast Earn</h3>
-
-          </div>
-          <div className='col-md-4 col-sm-12 p-3'>
-          <div className='p-2'>
-          <AiOutlineSafetyCertificate size={70} color='darkblue'/>
-
-          </div>
-
-          <h3 className='text-muted  '>More Trausted</h3>
-          </div>
+          </Zoom>
+          ))}
+     
         </div>
         
       </div>
       
     </div>
-    </Zoom>
+
     </Fragment>
     
   );

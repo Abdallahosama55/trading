@@ -37,15 +37,18 @@ function Cyrpto() {
 
   return (
     <div className="bg-light">
-      <div className=' py-5 bg-warning '>
+    <div className='  bg-warning'>
+      <div className='  container py-5 bg-warning pb-0 '>
+      
         <div className='row py-5'>
-          <div className='col-md-12'>
+ 
+          <div className='col-md-6'>
           <Bounce top>
             <h2 className='text-dark text-center  text-header'>Make Your Life Easier With Cyrpto </h2>
             </Bounce>
             <p className='text-center text-muted'>Trade bitcoin and other crypto with confidence on the world's fastest and most secure crypto exchange</p>
             <div className='container pb-0 pt-3'>
-              <div className='row  rounded py-3'>
+              <div className='row  rounded py-3 justify-content-center  align-items-center d-flex'>
                 <div className='col text-center '>
                   <h1 className='fw-bolder'>
                     +<CountUp delay={1} end={50} />
@@ -70,10 +73,25 @@ function Cyrpto() {
                     <h2 className=' text-dark'>Personals Atm</h2>
                   </div>
                 </div>
+               
+                <button className='btn btn-success p-2  shadow '>Apply to wallet</button>
+                
+              
+               
               </div>
             </div>
           </div>
+         
+          <div className=' col-md-4 m-md-5 m-0 p-0  '>
+          <Fade right>
+        <div className=' container justify-content-center justify-content-center '>
+<img src={require('../../assets/89.png')} className='  w-100  justify-content-center  '/>
+</div>
+</Fade>
+          
+                </div>
         </div>
+      </div>
       </div>
 
       <div></div>

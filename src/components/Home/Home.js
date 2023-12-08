@@ -26,7 +26,7 @@ const Home = () => {
 
       <div className='header'>
         <div className='container'>
-          <div className='row'>
+          <div className=''>
           <div>
          
   <BannerAds/>

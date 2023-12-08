@@ -24,7 +24,7 @@ const Footer = () => {
             <div className='col-lg-3 col-md-6'>
               <div className='box01'>
                 <Link to="/"><img src={Logo} alt='Logo' className='img-fluid bg-white rounded-2  p-3'/></Link>
-                <p>Lorem ipsum is dolor sit amet, csectetur adipiscing elit, dolore smod tempor incididunt ut labore et.</p>
+                <p>AHA MARKET is a partner with the best broker, Vantage </p>
                 <div className='icon-text'>
                   <div className="icon-container"><FontAwesomeIcon icon={faPhone} className='iconphone'/></div>
                   <div className='textContact'>
@@ -40,8 +40,6 @@ const Footer = () => {
                 <ul>
                   <Link to='/aboutus'><li>Forex</li></Link>
                   <Link to='/services'><li>Crypto</li></Link>
-    
-              
                   <Link to='/#'><li>Forex Cross Rates</li></Link>
        
                 </ul>
@@ -52,9 +50,9 @@ const Footer = () => {
                 <h3>Our Service</h3>
                 <ul>
                 
-                <Link to='/#'><li>Cardiology</li></Link>
-                <Link to='/#'><li>Precise Diagnosis</li></Link>
-                <Link to='/#'><li>Abmbulance Services</li></Link>
+                <Link to='/#'><li>Trading</li></Link>
+                <Link to='/#'><li>Crypto</li></Link>
+                <Link to='/#'><li>Exchange</li></Link>
                 </ul>
               </div>
             </div>
