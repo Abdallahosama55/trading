@@ -1,0 +1,59 @@
+
+  .slider.slick-arrow .slick-prev{
+display: none !important;
+color: aliceblue;
+  }
+  .slider.slick-arrow .slick-next{
+    display: none !important;
+    color: aliceblue;
+      }
+
+h1{
+    color: #299c87 !important;
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
+.header-text{
+  font-size: 40px !important;
+  color: #ffc107 !important
+}
+
+@media (min-width: 992px) {
+    .banner-text{
+
+        margin-top: 11% !important;
+        height: 330px;
+ 
+ 
+
+    }
+    .banner-text button{
+background-color:#ffbe12;
+color: white;
+border-style: none;
+
+
+
+  }
+
+  }
+  
+  /* Medium screens (md) */
+  @media (min-width: 768px) {
+    .banner-text{
+
+
+
+    }
+
+  }
+
+
+  .banner-text{
+    background-color:transparent !important;
+    padding:30px;
+    color: rgb(75, 74, 74);
+  }
