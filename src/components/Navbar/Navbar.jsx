@@ -53,7 +53,7 @@ console.log("here language" ,isEnglish)
 
             {isMobile && ( // Render NavDropdown only if not on mobile
             <>
-            <NavLink to="/crypto" className="me-3 link-nav text-dark" onClick={handleLinkClick}>
+            <NavLink to="/cyrpto" className="me-3 link-nav text-dark" onClick={handleLinkClick}>
               {isEnglish ? "Crypto Card" : "كارت العملات الرقمية"}
             </NavLink>
             <NavLink to="/Exchange" className="me-3 link-nav text-dark" onClick={handleLinkClick}>

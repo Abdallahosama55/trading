@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Services from '../Services/Services';
 import './Cyrpto.css';
 import ReactGA from 'react-ga';
@@ -62,7 +62,14 @@ feauture3:"من انواع البطاقات ",
     },
     
   };
+
+  useEffect(() => {
+    ReactGA.initialize('G-PL2LJ1Z4FC');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   const handleApplyToWallet = () => {
+
     // Track the button click event
     ReactGA.event({
       category: 'Button',
@@ -109,7 +116,7 @@ feauture3:"من انواع البطاقات ",
                   </div>
                 </div>
                 <a href='https://url.hk/i/en/6bbpv' className='btn btn-success p-2 shadow'>
-                  <button className='bg-success border-0 text-light tajawal-medium fs-6' onClick={handleApplyToWallet}>
+                  <button className='bg-success border-0 text-light tajawal-medium fs-6' onClick={()=>handleApplyToWallet()}>
                     {isEnglish ? text.english.buttonText : text.arabic.buttonText}
                   </button>
                 </a>
