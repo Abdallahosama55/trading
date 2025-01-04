@@ -81,7 +81,7 @@ feauture3:"من انواع البطاقات ",
   };
 
   return (
-    <div className="bg-light" dir={isEnglish?"ltr":'rtl'}>
+    <div className="bg-light font-popines" dir={isEnglish?"ltr":'rtl'}>
       <div className='bg-warning'>
         <div className='container py-5 bg-warning pb-0'>
           <div className='row py-5'>

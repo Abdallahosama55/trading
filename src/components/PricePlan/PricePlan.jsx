@@ -8,11 +8,11 @@ function PricePlan() {
   const isEnglish = useSelector((state) => state.language.isEnglish);
   console.log(selectMonthly);
   return (
-    <div className="PricingApp">
+    <div className="PricingApp bg-light">
     <div className="app-container">
       {/* Header */}
       <header>
-        <h2 className="header-topic fw-bolder text-gold">
+        <h2 className="header-topic fw-bolder  text-dark opacity-75">
           {isEnglish ? "Unlock Your Investment Potential with VVIP Signals" : "فتح إمكانات استثمارك مع إشارات VVIP"}
         </h2>
         <div className="header-row">
@@ -31,7 +31,7 @@ function PricePlan() {
         </div>
       </header>
       {/* Cards here */}
-      <div className="pricing-cards gap-3">
+      <div className="pricing-cards gap-3   ">
         <PricingCard
           title={isEnglish ? "Cryptocurrency Signals Monthly" : "الباقة الشهرية"}
           price={selectMonthly ? "80 $" : "293.83 AED"}

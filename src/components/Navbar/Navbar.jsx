@@ -26,8 +26,8 @@ console.log("here language" ,isEnglish)
   };
 
   return (
-    <Navbar bg="white" expand="lg" expanded={expanded} dir={isEnglish?'ltr':'rtl'}>
-      <Container>
+    <Navbar bg="light" expand="lg" expanded={expanded} dir={isEnglish?'ltr':'rtl'} className=' bg-light'>
+      <Container className=' bg-light'>
         <Navbar.Brand href="#home">
           <img src={logo} alt="Logo" height="50" className="me-md-5 pe-md-5" />
         </Navbar.Brand>
@@ -37,9 +37,29 @@ console.log("here language" ,isEnglish)
             <NavLink to="/" className="me-3 link-nav  text-dark" onClick={handleLinkClick}>
               {isEnglish?"Home":"الرئيسية"}
             </NavLink>
+            
+{!isMobile && ( // Render NavDropdown only if not on mobile
+              <NavDropdown title={isEnglish?"Forex":"التداول "} id="basic-nav-dropdown" className="me-3 link-nav  text-dark" onClick={handleLinkClick}>
+                <NavDropdown.Item as={NavLink} to="/Forex">
+                  {isEnglish?"Forex":"  التداول"}
+                </NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/SignalsForex">
+                {isEnglish?"Signals":" اشارات VIP "}
+                </NavDropdown.Item>
+              </NavDropdown>
+            )}
+
+            {isMobile && ( // Render NavDropdown only if not on mobile
+            <>
             <NavLink to="/Forex" className="me-3 link-nav text-dark" onClick={handleLinkClick}>
-              {isEnglish?"Forex":"الفوركس"}
+              {isEnglish ? "Forex" : "التداول  "}
             </NavLink>
+            <NavLink to="/SignalsForex" className="me-3 link-nav text-dark" onClick={handleLinkClick}>
+              {isEnglish ? "Signals " : "  اشارات VIP"}
+            </NavLink>
+          </>
+          )}
+        
             {!isMobile && ( // Render NavDropdown only if not on mobile
               <NavDropdown title={isEnglish?"Crypto":"العملات الرقمية"} id="basic-nav-dropdown" className="me-3 link-nav  text-dark" onClick={handleLinkClick}>
                 <NavDropdown.Item as={NavLink} to="/cyrpto">
@@ -61,6 +81,7 @@ console.log("here language" ,isEnglish)
             </NavLink>
           </>
           )}
+
           <NavLink to="/Signals" className="me-3 link-nav text-dark" onClick={handleLinkClick}>
   {isEnglish ? "VVIP Signals" : "إشارات VVIP"}
 </NavLink>

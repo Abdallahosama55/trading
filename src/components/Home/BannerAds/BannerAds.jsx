@@ -52,7 +52,7 @@ function BannerAds() {
 {/*<img src={require('../../../assets/bgg2.png')} alt='Background Image' className='background-image' /> */}
     
     <div className=''>
-    <div className='row justify-content-center align-items-center tajawal-medium ' dir={isEnglish?"ltr" :"rtl"}>
+    <div className='row justify-content-center align-items-center   ' dir={isEnglish?"ltr" :"rtl"}>
     <Zoom>
 
     <div className='col-md-7 col-sm-12 banner-text '> 

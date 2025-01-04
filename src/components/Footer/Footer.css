@@ -29,7 +29,7 @@ ul{
 }
 .footer{
  
-  background-color: #313131;
+
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +41,7 @@ ul{
 }
 .footer::after{
   position: relative;
-  background-image: url('../../assets/waveFooter.png');
+ 
   background-color: #0f0f0f;
     background-position: 0 0;
     background-repeat: no-repeat;

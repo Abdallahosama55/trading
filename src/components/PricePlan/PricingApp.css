@@ -50,7 +50,7 @@
 }
 
 button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "sans", sans-serif;
   font-weight: var(--primary-fw);
   font-size: var(--primary-fs);
 }

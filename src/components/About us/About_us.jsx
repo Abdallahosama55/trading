@@ -12,7 +12,7 @@ function About_us() {
     
     <Aboutus></Aboutus>
     </div>
-    <div className='container'>
+    <div className=' bg-white'>
    <Manager/>
     
     </div>

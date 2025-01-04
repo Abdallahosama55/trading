@@ -31,7 +31,7 @@ color: azure !important;
               
 .PricingCard header > .card-price {
   margin-block: 1rem;
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 
@@ -53,11 +53,11 @@ color: azure !important;
 }
 .PricingCard .card-btn {
   cursor: pointer;
-  padding-block: 1em;
+  padding-block: .6em;
   width: 100%;
   border-radius: 0.5em;
   background-image: linear-gradient(to right, var(--primary-linear-gradient));
-  border: 2px solid transparent;
+  border: 0px solid transparent;
   outline: transparent;
   transition: 0.125s ease;
   color: var(--neutral-white);
@@ -68,7 +68,7 @@ color: azure !important;
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to right, var(--primary-linear-gradient)) border-box;
   border-radius: 0.5em;
-  border: 2px solid transparent;
+
 }
 
 .PricingCard:nth-child(2) .card-btn {

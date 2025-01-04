@@ -59,24 +59,22 @@ function Contactus() {
 
   return (
     <Fragment>
-    <div className="">
-      <Container className="shadow rounded-1 mt-5 ">
+    <div className=" bg-light">
+      <Container className="shadow rounded-3 my-5 bg-white  ">
         <h1 className="p-3 fw-bold text-muted  text-center">
           {isEnglish ? 'Contact' : 'اتصل'} <span className="text-warning">{isEnglish ? 'Us' : 'بنا'}</span>
         </h1>
         <div className="row justify-content-center align-items-center pb-5">
           <div className="col-md-6">
             <div style={{ overflow: 'hidden', width: '100%' }}>
-              <LazyLoad>
-                <motion.img
+              
+                <img
                   src={img_contact}
                   alt="Moving Image"
                   style={{ width: '100%' }}
-                  initial="initial"
-                  animate="animate"
-                  variants={imageVariants}
+              
                 />
-              </LazyLoad>
+            
             </div>
           </div>
           <div className="col-md-6">
@@ -91,7 +89,7 @@ function Contactus() {
                     <div className="row">
                       <div className="col-1"></div>
                       <div className="col-11">
-                        <Field type="text" name="name" className="form-control rounded-3" placeholder={isEnglish ? 'Enter Name' : 'ادخل الاسم'} />
+                        <Field type="text" name="name" className="form-control rounded-3" placeholder={isEnglish ? 'Enter Name' : 'ادخل الاسم'} dir={!isEnglish ?"rtl" :"ltr"} />
                         <ErrorMessage name="name" component="div" className="text-danger" />
                       </div>
                     </div>
@@ -100,7 +98,7 @@ function Contactus() {
                     <div className="row">
                       <div className="col-1"></div>
                       <div className="col-11">
-                        <Field type="email" name="email_from" className="form-control" placeholder={isEnglish ? 'Enter email' : 'ادخل البريد الالكتروني'} />
+                        <Field type="email" name="email_from" className="form-control" placeholder={isEnglish ? 'Enter email' : 'ادخل البريد الالكتروني'} dir={!isEnglish ?"rtl" :"ltr"} />
                         <ErrorMessage name="email_from" component="div" className="text-danger" />
                       </div>
                     </div>
@@ -115,6 +113,8 @@ function Contactus() {
                           name="message"
                           placeholder={isEnglish ? 'Write your message here' : 'اكتب رسالتك هنا'}
                           rows="3"
+                          dir={
+                            !isEnglish ?"rtl" :"ltr"}
                         />
                         <ErrorMessage name="message" component="div" className="text-danger" />
                       </div>

@@ -11,7 +11,8 @@ import Contactus from './components/Contactus/Contactus';
 import Exchange from './components/Exchange/Exchange';
 import Signals from './components/Signals/Signals';
 import About_us from './components/About us/About_us';
-
+import SignalsForex from './components/SignalsForex/SignalsForex';
+import PrivacyPolicy from './components/PrivaceyPolicey/PrivaceyPolicey';
 function App() {
   useEffect(() => {
     ReactGA.initialize('G-PL2LJ1Z4FC');
@@ -29,7 +30,10 @@ function App() {
           <Route path="/Exchange" element={<Exchange />} />
           <Route path="/Forex" element={<Forex />} />
           <Route path="/Signals" element={<Signals />} />
+          <Route path="/SignalsForex" element={<SignalsForex />} />
           <Route path="/Contactus" element={<Contactus />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
+          
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

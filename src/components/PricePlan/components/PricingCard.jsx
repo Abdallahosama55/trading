@@ -4,10 +4,10 @@ import { useSelector } from "react-redux";
 const PricingCard = ({ title, price, storage, users, sendUp }) => {
   const isEnglish = useSelector((state) => state.language.isEnglish);
   return (
-    <div className="PricingCard">
+    <div className="PricingCard  shadow">
       <header>
         <p className="card-title ">{title}</p>
-        <h2 className="card-price fw-bold">{price}</h2>
+        <h2 className="card-price ">{price}</h2>
       </header>
       {/* features here */}
       <div className="card-features">

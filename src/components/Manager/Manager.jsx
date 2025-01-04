@@ -8,7 +8,7 @@ import TitleBasic from '../../components/TitleBasic/TitleBasic'
 import ItemTestimonial from './ItemTestimonial';
 
 
-import bgTestimonial from '../../assets/manager.png'
+import bgTestimonial from '../../assets/manger.jpeg'
 import { Fade } from 'react-reveal';
 import { useSelector } from 'react-redux';
 
@@ -37,8 +37,8 @@ const Manager = () => {
   
   return (
     <>
-    <div className='testimonial '>
-      <div className='container'>
+    <div className='testimonial container  bg-white '>
+      <div className=''>
         <Fade top>
           <div className='titlemain'>
             <TitleBasic title={isEnglish ? 'Founder & CEO' : 'المؤسس والرئيس التنفيذي'} />
@@ -63,7 +63,7 @@ const Manager = () => {
           <Fade right>
             <div className='col-lg-4'>
               <div className='box thumb-wraper justify-content-center d-flex w-100 '>
-                <img src={bgTestimonial} alt='img' className='img-fluid ' />
+                <img src={bgTestimonial} alt='img' className='img-fluid bg-remove ' />
               </div>
             </div>
           </Fade>
